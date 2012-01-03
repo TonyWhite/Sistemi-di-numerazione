@@ -244,7 +244,7 @@ public class Finestra extends JFrame implements ActionListener, WindowListener, 
                                 for (int i=0; (i<numeri.length)&&(conversione); i++)
                                 {
                                     String tmp = Conversioni.baseToDec(numeri[i], base_da);
-                                    if (tmp.equals(Conversioni.ERRORE))
+                                    if (tmp.startsWith(Conversioni.ERRORE))
                                     {
                                         conversione = false;
                                     }

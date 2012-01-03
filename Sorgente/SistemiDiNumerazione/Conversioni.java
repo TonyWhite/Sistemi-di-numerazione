@@ -6,7 +6,7 @@
 public class Conversioni
 {
     public static final String ERRORE = "Err";
-    private static final long MAX_DEC = 999995582609919L; // Numero decimale più grande da convertire
+    private static final long MAX_DEC = 9999999999999990L; // Numero decimale più grande da convertire
 
     /**
      * Constructor for objects of class Conversioni
@@ -40,13 +40,13 @@ public class Conversioni
      * int base: la base nella quale convertire
      * return: la stringa che rappresenta il numero convertito
      * 
-     * Nota 1: La conversione è assicurata solo per numeri interi positivi fino a 999995582609919
+     * Nota 1: La conversione è assicurata solo per numeri interi positivi fino a 9999999999999990
      * Nota 2: base <= 36 perché le cifre rappresentate con le lettere dell'alfabeto sono solo maiuscole
      */
     public static String decToBase(String num, int base)
     {
         /**
-         * Oltre 999995582609919 il double non riesce a gestire tutti i decimali
+         * Oltre 9999999999999990 il double non riesce a gestire con precisione tutti i decimali
          */
         String valore = ERRORE;
         try
@@ -64,12 +64,13 @@ public class Conversioni
                     if (base==1) // Calcola per la base più inutile e pericolosa in assoluto
                     {
                         /**
-                         * Con il massimo valore possibile 999'995'582'609'919 si consuma una quatara di RAM.
+                         * Con il massimo valore possibile 9'999'999'999'999'990 si consuma una quatara di RAM.
                          * Ogni carattere della stringa è rappresentato da 16 bit,
-                         * quindi il consumo massimo sarebbe di 1'999'991'165'219'838 byte
-                         * che sarebbero 1'907'340'200 MB
-                         * che sarebbero 1'862'636,9 GB
-                         * che sarebbero cazzi amari
+                         * quindi il consumo massimo sarebbe di (9'999'999'999'999'990+1)*2 byte
+                         * che sarebbero 19'999'999'999'999'982 byte
+                         * che sarebbero 19'073'486'328,1 MB
+                         * che sarebbero 18'626'451,4923 GB
+                         * che sarebbero cazzi amari espressi in potenze di 2
                          * E allora perché non ho messo un controllo per limitare lo spreco di memoria?
                          * 1) Per vedere chi è tanto http://lmgtfy.com/?q=persona+poco+avveduta+che+non+prevede+le+conseguenze+dei+propri+atti+per+insufficiente+intelligenza&l=1
                          * 2) Me lo ha chiesto Fabio (no, non è quello di Striscia)

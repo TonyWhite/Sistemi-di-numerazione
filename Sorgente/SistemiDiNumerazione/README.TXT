@@ -25,4 +25,4 @@ La base 1 è matematicamente corretta e siccome la matematica non è un'opinione
 INFO
 Ho scelto solo 36 basi perché l'esadecimale usa "cifre dell'alfabeto" sia maiuscole che minuscole, quindi i caratteri alfabetici impiegati come cifre vanno da A-Z. Ho usato solo le lettere maiuscole.
 
-Sto lavorando per aumentare il limite massimo mantenendo la stessa velocità di calcolo. Ma essendo una inutility nerd-oriented a chi potrebbero interessare numeri superiori a novecentonovantanove bilioni novecentonovantacinque miliardi cinquecentoottantadue milioni seicentonove mila novecentodiciannove?
+Sto lavorando per aumentare il limite massimo mantenendo la stessa velocità di calcolo. Ma essendo una inutility nerd-oriented a chi potrebbero interessare numeri superiori a nove biliardi novecentonovantanove bilioni novecentonovantanove miliardi novecentonovantanove milioni novecentonovantanove mila novecentonovanta?

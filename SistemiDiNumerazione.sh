@@ -1,1 +1,1 @@
-java -jar "Sistemi di numerazione.jar" "CDE/Motif"
+java -jar "SistemiDiNumerazione.jar" "Nimbus"

@@ -7,7 +7,7 @@ comment1.target=java.lang.String\ charToBase(char,\ int)
 comment1.text=\n\ Converte\ un\ carattere\ nel\ relativo\ codice\ ASCII\ nella\ base\ specificata\n\ \n\ char\ carattere\:\ il\ carattere\ da\ codificare\n\ int\ base\:\ la\ base\ di\ codifica\n\ \n\ Esempio\:\n\ carattere\ \=\ 'A'\n\ base\ \=\ 2\n\ codice\ ASCII\ \=\ 65\n\ return\:\ "1000001"\n
 comment2.params=num\ base
 comment2.target=java.lang.String\ decToBase(java.lang.String,\ int)
-comment2.text=\n\ Converte\ un\ numero\ in\ base\ 10\ in\ un\ qualsiasi\ altra\ base\n\ \n\ String\ num\:\ numero\ in\ base\ 10\n\ int\ base\:\ la\ base\ nella\ quale\ convertire\n\ return\:\ la\ stringa\ che\ rappresenta\ il\ numero\ convertito\n\ \n\ Nota\ 1\:\ La\ conversione\ \u00E8\ assicurata\ solo\ per\ numeri\ interi\ positivi\ fino\ a\ 999995582609919\n\ Nota\ 2\:\ base\ <\=\ 36\ perch\u00E9\ le\ cifre\ rappresentate\ con\ le\ lettere\ dell'alfabeto\ sono\ solo\ maiuscole\n
+comment2.text=\n\ Converte\ un\ numero\ in\ base\ 10\ in\ un\ qualsiasi\ altra\ base\n\ \n\ String\ num\:\ numero\ in\ base\ 10\n\ int\ base\:\ la\ base\ nella\ quale\ convertire\n\ return\:\ la\ stringa\ che\ rappresenta\ il\ numero\ convertito\n\ \n\ Nota\ 1\:\ La\ conversione\ \u00E8\ assicurata\ solo\ per\ numeri\ interi\ positivi\ fino\ a\ 9999999999999990\n\ Nota\ 2\:\ base\ <\=\ 36\ perch\u00E9\ le\ cifre\ rappresentate\ con\ le\ lettere\ dell'alfabeto\ sono\ solo\ maiuscole\n
 comment3.params=valore
 comment3.target=char\ valoreCifra(byte)
 comment3.text=\n\ Ritorna\ la\ cifra\ in\ base\ 36\ che\ rappresenta\ il\ valore\ in\ base\ decimale\ dato\ in\ input\n
