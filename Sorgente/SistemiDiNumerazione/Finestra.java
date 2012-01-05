@@ -5,6 +5,7 @@
  */
 import java.awt.*;
 import java.awt.event.*;
+import java.net.URL;
 import javax.swing.*;
 public class Finestra extends JFrame implements ActionListener, WindowListener, Runnable
 {
@@ -29,6 +30,7 @@ public class Finestra extends JFrame implements ActionListener, WindowListener, 
         super("Sistemi di numerazione");
         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         this.addWindowListener(this);
+        this.impostaIcona("img/48/binary.png");
         
         // Inizializzazione dei font
         monospace = new Font(Font.MONOSPACED, Font.PLAIN, 12);
@@ -296,6 +298,39 @@ public class Finestra extends JFrame implements ActionListener, WindowListener, 
         if (JOptionPane.YES_OPTION==JOptionPane.showConfirmDialog(this,"Vuoi uscire dall'inutility?", this.getTitle(), JOptionPane.YES_NO_OPTION))
         {
             System.exit(0);
+        }
+    }
+    
+    /**
+     * Crea un'icona generica per qualsiasi componente
+     */
+    private static ImageIcon creaIcona(String path)
+    {
+        URL imgURL = Finestra.class.getResource(path);
+        if (imgURL != null)
+        {
+            return new ImageIcon(imgURL);
+        }
+        else
+        {
+            System.err.println("Impossibile trovare l'immagine " + path);
+            return null;
+        }
+    }
+    
+    /**
+     * Imposta l'icona per la finestra corrente
+     */
+    private void impostaIcona(String path)
+    {
+        URL imgURL = Finestra.class.getResource(path);
+        if (imgURL != null)
+        {
+            setIconImage(Toolkit.getDefaultToolkit().getImage(imgURL));
+        }
+        else
+        {
+            System.err.println("Impossibile trovare " + imgURL.getPath() + "\nFile: " + imgURL.getFile());
         }
     }
     
