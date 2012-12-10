@@ -1,5 +1,5 @@
 /**
- * Avvia la finestra con il tema grafico indicato in "opzions.txt" oppure passandoglielo come parametro
+ * Avvia la finestra con il tema grafico indicato in "options.txt" oppure passandoglielo come parametro
  * 
  * Antonio Bianco
  */
@@ -16,11 +16,16 @@ public class SistemiDiNumerazione
     /*
      * Avvia l'applicazione con il tema grafico scelto dell'utente
      */
+    public static String ABS_PATH;
     final static String OPZIONI = "options.txt";
+    static String PATH_OPZIONI;
     private static String tema;
     
     public static void main(String args[])
     {
+        ABS_PATH = getAbsolutePath(); // Definisce il percorso assoluto dell'applicazione
+        PATH_OPZIONI = ABS_PATH + OPZIONI;
+        
         String lef = "";
         int cont = 0;
         
@@ -63,7 +68,7 @@ public class SistemiDiNumerazione
     private static String leggiOpzioni()
     {
         String tema = "Nimbus";
-        if ((new File(OPZIONI)).exists())
+        if (new File(PATH_OPZIONI).exists())
         {
             // Il file esiste
             // Si sceglie il tema salvato
@@ -71,7 +76,7 @@ public class SistemiDiNumerazione
             try
             {
                 errore = "Impossibile leggere il file " + OPZIONI;
-                FileReader streamOpzioni = new FileReader(OPZIONI);
+                FileReader streamOpzioni = new FileReader(PATH_OPZIONI);
                 BufferedReader bufferOpzioni = new BufferedReader(streamOpzioni);
                 errore = "Impossibile leggere il contenuto del file " + OPZIONI;
                 tema = bufferOpzioni.readLine();
@@ -91,11 +96,11 @@ public class SistemiDiNumerazione
     }
     
     /**
-     * Ritorna il percorso assoluto del file indicato
+     * Ritorna il percorso assoluto dell'applicazione
      */
-    public static String getAbsolutePath(String file)
+    private static String getAbsolutePath()
     {
-        URL fileURL = SistemiDiNumerazione.class.getResource(file);
+        URL fileURL = SistemiDiNumerazione.class.getResource("/");
         if (fileURL == null)
         {
             return null;
