@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Conversioni()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Conversioni\n
+comment1.params=carattere\ base
+comment1.target=java.lang.String\ charToBase(char,\ int)
+comment1.text=\n\ Converte\ un\ carattere\ nel\ relativo\ codice\ ASCII\ nella\ base\ specificata\n\ \n\ char\ carattere\:\ il\ carattere\ da\ codificare\n\ int\ base\:\ la\ base\ di\ codifica\n\ \n\ Esempio\:\n\ carattere\ \=\ 'A'\n\ base\ \=\ 2\n\ codice\ ASCII\ \=\ 65\n\ return\:\ "1000001"\n
+comment2.params=num\ base
+comment2.target=java.lang.String\ decToBase(java.lang.String,\ int)
+comment2.text=\n\ Converte\ un\ numero\ in\ base\ 10\ in\ un\ qualsiasi\ altra\ base\n\ \n\ String\ num\:\ numero\ in\ base\ 10\n\ int\ base\:\ la\ base\ nella\ quale\ convertire\n\ return\:\ la\ stringa\ che\ rappresenta\ il\ numero\ convertito\n\ \n\ Nota\ 1\:\ La\ conversione\ \u00E8\ assicurata\ solo\ per\ numeri\ interi\ positivi\ fino\ a\ 9999999999999990\n\ Nota\ 2\:\ base\ <\=\ 36\ perch\u00E9\ le\ cifre\ rappresentate\ con\ le\ lettere\ dell'alfabeto\ sono\ solo\ maiuscole\n
+comment3.params=valore
+comment3.target=char\ valoreCifra(byte)
+comment3.text=\n\ Ritorna\ la\ cifra\ in\ base\ 36\ che\ rappresenta\ il\ valore\ in\ base\ decimale\ dato\ in\ input\n
+comment4.params=num\ base
+comment4.target=java.lang.String\ baseToDec(java.lang.String,\ int)
+comment4.text=\n\ Converte\ un\ numero\ in\ base\ decimale\n\ \n\ String\ num\:\ numero\ da\ convertire\n\ int\ base\:\ base\ del\ numero\ da\ convertire\n\ return\:\ una\ stringa\ che\ rappresenza\ il\ numero\ num\ convertito\ in\ decimale\n\ \n\ Nota\ 1\:\ Il\ metodo\ controlla\ che\ il\ numero\ in\ input\ sia\ valido\n\ Nota\ 2\:\ La\ conversione\ \u00E8\ assicurata\ solo\ per\ numeri\ interi\ positivi\ fino\ a\ Long.MAX_VALUE\n\ Nota\ 3\:\ base<\=36\ perch\u00E9\ le\ cifre\ rappresentate\ con\ le\ lettere\ dell'alfabeto\ sono\ solo\ maiuscole\n
+comment5.params=num\ base
+comment5.target=boolean\ numeroValido_privato(java.lang.String,\ int)
+comment5.text=\n\ Verifica\ se\ la\ cifra\ pu\u00F2\ essere\ espressa\ con\ la\ base\ indicata\n\ \n\ String\ num\:\ numero\ da\ verificare\n\ int\ base\:\ base\ per\ la\ quale\ verificare\n\ return\:\ ritorna\ true\ se\ il\ numero\ pu\u00F2\ essere\ espresso\ nella\ base\ indicata\n\ \n\ Nota\:\ il\ metodo\ \u00E8\ privato\ ed\ \u00E8\ pi\u00F9\ snello\n
+comment6.params=num\ base
+comment6.target=boolean\ numeroValido(java.lang.String,\ int)
+comment6.text=\n\ Verifica\ se\ la\ cifra\ pu\u00F2\ essere\ espressa\ con\ la\ base\ indicata\n\ \n\ String\ num\:\ numero\ da\ verificare\n\ int\ base\:\ base\ per\ la\ quale\ verificare\n\ return\:\ ritorna\ true\ se\ il\ numero\ pu\u00F2\ essere\ espresso\ nella\ base\ indicata\n
+comment7.params=
+comment7.target=void\ run()
+comment7.text=\n\ Thread\ per\ salvaguardare\ la\ conversione\ pi\u00F9\ rischiosa\:\ da\ decimale\ a\ base\ 1\n
+numComments=8

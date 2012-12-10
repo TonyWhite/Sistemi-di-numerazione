@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ leggiOpzioni()
+comment1.text=\n\ Legge\ il\ tema\ salvato\ nel\ file\ delle\ opzioni.\n\ Ritorna\ false\ se\ il\ file\ \u00E8\ corrotto\ o\ inesistente\n
+comment2.params=
+comment2.target=void\ salvaOpzioni()
+comment2.text=\n\ Salva\ le\ opzioni\ nel\ file\n
+comment3.params=
+comment3.target=java.lang.String\ getAbsolutePath()
+comment3.text=\n\ Ritorna\ il\ percorso\ assoluto\ dell'applicazione\n
+comment4.params=
+comment4.target=void\ cambiaTema()
+comment4.text=\n\ Cambia\ il\ tema\ grafico\ in\ runtime\n
+numComments=5
