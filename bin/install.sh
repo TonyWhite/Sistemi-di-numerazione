@@ -30,7 +30,6 @@ if [ `whoami` == "root" ]; then
 				cp $APPLICAZIONE $INSTALLAZIONE
 				
 				# Crea l'eseguibile in /usr/bin
-				#ln -s "$INSTALLAZIONE/$APPLICAZIONE" $BINARIO
 				echo "java -jar $INSTALLAZIONE/$APPLICAZIONE" > $BINARIO
 				chmod +x $BINARIO
 				
