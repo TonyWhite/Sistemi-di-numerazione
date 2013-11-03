@@ -31,6 +31,9 @@ INFO
 - Il numero massimo è solo nove biliardi novecentonovantanove bilioni novecentonovantanove miliardi novecentonovantanove milioni novecentonovantanove mila novecentonovanta a causa dell’imprecisione del double.
 
 NOVITÀ E BUGFIX
+03 novembre 2013
+- Corretta la posizione del file di configurazione
+- Creato un file di installazione per i sistemi Linux
 24 agosto 2012
 - Il programma ha un suo file delle opzioni dove salvare le preferenze dell’utente;
 - Il tema può essere cambiato in runtime;

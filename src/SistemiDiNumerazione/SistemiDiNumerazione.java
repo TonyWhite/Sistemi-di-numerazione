@@ -23,7 +23,8 @@ public class SistemiDiNumerazione
      * Avvia l'applicazione con il tema grafico scelto dell'utente
      */
     public static String ABS_PATH;
-    final static String OPZIONI = ".SistemiDiNumerazione.txt";
+    final static String FILE_OPZIONI = "./java/SistemiDiNumerazione/config.conf";
+    final static String CARTELLA_OPZIONI = "./java/SistemiDiNumerazione/";
     private static Finestra gui;
     
     public static void main(String args[])
@@ -84,13 +85,13 @@ public class SistemiDiNumerazione
      */
     private static void leggiOpzioni()
     {
-        if (new File(OPZIONI).exists())
+        if (new File(FILE_OPZIONI).exists())
         {
             // Il file esiste
             // Si sceglie il tema salvato
             try
             {
-                FileReader streamOpzioni = new FileReader(OPZIONI);
+                FileReader streamOpzioni = new FileReader(FILE_OPZIONI);
                 BufferedReader bufferOpzioni = new BufferedReader(streamOpzioni);
                 Opzioni.TEMA_CORRENTE = bufferOpzioni.readLine();
                 Opzioni.FONT_NAME = bufferOpzioni.readLine();
@@ -101,6 +102,11 @@ public class SistemiDiNumerazione
             }
             catch(Exception e){}
         }
+        else
+        {
+            File cartella = new File(CARTELLA_OPZIONI);
+            if (!cartella.exists()) cartella.mkdirs();
+        }
     }
     
     /**
@@ -110,7 +116,7 @@ public class SistemiDiNumerazione
     {
         try
         {
-            FileWriter fileOpzioni = new FileWriter(OPZIONI);
+            FileWriter fileOpzioni = new FileWriter(FILE_OPZIONI);
             PrintWriter fileOut = new PrintWriter(fileOpzioni);
             fileOut.println(Opzioni.TEMA_CORRENTE);
             fileOut.println(Opzioni.FONT_NAME);
@@ -150,7 +156,7 @@ public class SistemiDiNumerazione
         }
         catch (Exception e)
         {
-            System.err.println(e.getMessage());
+            System.err.println("Cambia tema(): " + e.getMessage());
         }
     }
 }

@@ -129,7 +129,6 @@ public class Finestra extends JFrame implements ActionListener, WindowListener, 
         cbbFont = new JComboBox(Opzioni.LISTA_FONT);
         cbbFont.setSelectedItem(Opzioni.FONT_NAME);         // Seleziona il font corrente
         cbbFont.setToolTipText(Opzioni.FONT_NAME);          // Imposta il tooltip
-        System.out.println("cbbFont.getPrototypeDisplayValue() = " + cbbFont.getPrototypeDisplayValue());
         cbbFont.setPrototypeDisplayValue("1234567890123456789012345");  // Imposta la larghezza del combobox a 25 caratteri
         cbbFont.addActionListener(this);
         

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Sistemi Di Numerazione
+Comment=(IN)Utility for developers
+Categories=Application;Development;
+Exec=sistemidinumerazione
+Icon=sistemidinumerazione.svg
+Terminal=false
+Type=Application
