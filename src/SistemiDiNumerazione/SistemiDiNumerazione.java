@@ -23,8 +23,8 @@ public class SistemiDiNumerazione
      * Avvia l'applicazione con il tema grafico scelto dell'utente
      */
     public static String ABS_PATH;
-    final static String FILE_OPZIONI = "./java/SistemiDiNumerazione/config.conf";
-    final static String CARTELLA_OPZIONI = "./java/SistemiDiNumerazione/";
+    final static String FILE_OPZIONI = "./.java/SistemiDiNumerazione/config.conf";
+    final static String CARTELLA_OPZIONI = "./.java/SistemiDiNumerazione/";
     private static Finestra gui;
     
     public static void main(String args[])
