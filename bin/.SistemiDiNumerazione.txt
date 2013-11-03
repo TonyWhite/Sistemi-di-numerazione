@@ -1,4 +1,0 @@
-GTK+
-Monospaced
-0
-12
