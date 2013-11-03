@@ -2,7 +2,7 @@
 SistemiDiNumerazione.jar (v1.5)
 
 ### REQUISITI
-Java 6
+Java 7
 
 ### COSA FA
 * Questa è una inutility.
